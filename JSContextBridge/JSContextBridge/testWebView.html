@@ -1,0 +1,24 @@
+<html>
+<head>
+  <script>
+    var count = 0
+    function reloadtime(){
+      count++
+      document.getElementById("reload").innerHTML="reload time "+count;
+    }
+  function sayinfo(){
+    document.getElementById("say").innerHTML="device info id:"+viewController.sayHello();
+  }
+  </script>
+</head>
+<body>
+  
+    <p><button type='button' onclick='push()'>push</button></p>
+
+    <p><button type='button' id='reload' onclick='reloadtime()'>reload</button></p>
+    
+    <p><button type='button' onclick='sayinfo()'>say info</button></p>
+    <p id='say' ></p>
+    
+</body>
+</html>
